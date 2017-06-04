@@ -3,7 +3,8 @@
 
 #include <vector>
 #include <math.h>
-#include "system.h"
+#include "testSystem.h"
 
+extern testSystem * SpringMassDamper;
 
 #endif // SPRINGMASSDAMPER_H

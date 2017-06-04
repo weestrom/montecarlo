@@ -48,4 +48,4 @@ int stepfun(system_config * cfg, system_workspace * wkspc) {
 
 }
 
-system * SpringMassDamper = new system(*stepfun, &cfg, &wkspc);
+testSystem * SpringMassDamper = new testSystem(*stepfun, &cfg, &wkspc);

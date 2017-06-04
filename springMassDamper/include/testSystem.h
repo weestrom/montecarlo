@@ -1,5 +1,5 @@
-#ifndef SYSTEM_H
-#define SYSTEM_H
+#ifndef TESTSYSTEM_H
+#define TESTSYSTEM_H
 
 #include <vector>
 #include <math.h>
@@ -36,11 +36,12 @@ struct system_workspace {
 };
 
 typedef int (*step_function)(system_config *, system_workspace *);
-class system
+
+class testSystem
 {
     public:
-        system(step_function step, system_config * cfg, system_workspace * wkspc);
-        virtual ~system();
+        testSystem(step_function step, system_config * cfg, system_workspace * wkspc);
+        virtual ~testSystem();
 
         system_config * Get_config() { return config; };
         system_workspace * Get_workspace() { return workspace; };
